@@ -1,2 +1,88 @@
-.wrap
-  background: #333222
+.home-page
+  background-size: cover
+  background: url('http://eleon.devbirds.com/Eleon/demo/img/header.jpg') no-repeat fixed
+
+.recipe
+  display: flex
+  padding-bottom: 50px
+
+.recipe__item
+  font-family: 'Pathway Gothic One', sans-serif
+  color: #ffffff
+  display: flex
+  flex-direction: column
+  flex: 1 1 25%
+  max-width: 25%
+  margin: 0px 15px
+  outline: 1px solid rgba(255, 255, 255, 0.5)
+  outline-offset: -8px
+  position: relative
+  &:first-child
+    margin-left: 0
+  &:last-child
+    margin-right: 0
+
+.recipe__img
+  overflow: hidden
+  height: 166px
+
+.recipe__energy
+  font-size: 20px
+  background: #2b3034
+  padding: 8px 15px
+  ul
+    display: flex
+    justify-content: space-between
+    padding: 6px 5px
+    border-top: 1px dashed rgba(242, 180, 60, 0.5)
+    border-bottom: 1px dashed rgba(242, 180, 60, 0.5)
+  li
+    flex: 1 1 50%
+    &:first-child
+      border-right: 1px solid rgba(255, 255, 255, 0.2)
+    &:last-child
+      text-align: right
+  span
+    font-size: 18px
+    opacity: 0.5
+    padding-left: 5px
+
+.recipe__descr
+  height: 145px
+  background: #2b3034
+  padding: 0 15px
+  overflow: hidden
+  a
+    color: #f2b43c
+    font-size: 22px
+    line-height: 1.2
+    padding: 0 5px 5px 5px
+  ul
+    padding: 0 5px
+
+.person
+  position: absolute
+  top: 20px
+  left: -10px
+  background: #f1af2e
+  width: 70px
+  padding: 4px
+  font-size: 18px
+  text-align: center
+  box-shadow: 0px 0px 7px 2px #000000 2 e
+  &::before
+    content: ''
+    position: absolute
+    bottom: -10px
+    left: 0
+    border: 5px solid transparent
+    border-top: 5px solid #705115
+    border-left: 5px solid #705115
+    transform: scale(-1, 1)
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: -30px
+    border: 17px solid transparent
+    border-left: 13px solid #f1af2e

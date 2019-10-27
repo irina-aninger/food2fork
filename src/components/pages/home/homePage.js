@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import RecipeHomeElem from "./homeElem";
+import RecipeList from "../recipeList";
+
+// includes
+import '../../../Assets/css/homePage.min.css'
 
 
 class HomePage extends Component {
@@ -9,7 +12,8 @@ class HomePage extends Component {
             {name: 'breakfast'},
             {name: 'lunch'},
             {name: 'dinner'}
-        ]
+        ],
+        count: 4
     };
 
 
@@ -19,14 +23,14 @@ class HomePage extends Component {
             return (
                 <div key={key}>
                     <h1>{el.name} recipes</h1>
-                    <RecipeHomeElem/>
+                    <RecipeList value={el.name} count={this.state.count}/>
                 </div>
             )
         });
 
         return (
             <>
-                <div className={"content home_page"}>
+                <div className={"content home-page"}>
                     <div className={'container'}>
                         {homeBoxes}
                     </div>

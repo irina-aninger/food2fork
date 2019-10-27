@@ -1,46 +1,52 @@
 import React, {Component} from 'react';
-import spinner from '../../../Assets/spinner.svg';
+import spinner from "../../Assets/spinner.svg";
 
 
+const API_ID = '2b39d5c7',
+    API_KEY = '3a79db436b6e57c7aa617d135085b8f6';
 
-const API_ID  = '2b39d5c7',
-      API_KEY = '3a79db436b6e57c7aa617d135085b8f6';
 
+class RecipeList extends Component {
 
-class RecipeHomeElem extends Component {
-
-    state = {
-        isLoading: true,
-        data: [],
-        image: undefined
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoading: true,
+            error: null,
+            items: [],
+            image: undefined
+        };
+    }
 
     componentDidMount() {
-        return fetch(`https://api.edamam.com/search?q=${this.props.nameRecipe}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=4`)
-            .then((response) => response.json())
-            .then((responseJson) => {
-
-                this.setState({
-                    isLoading: false,
-                    data: responseJson.hits
-                })
-
-            })
-            .catch((error) => {
-                console.log(error);
-            })
+        fetch(`https://api.edamam.com/search?q=${this.props.value}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=${this.props.count}`)
+            .then((res) => res.json())
+            .then(
+                (result) => {
+                    this.setState({
+                        isLoading: false,
+                        items: result.hits
+                    });
+                },
+                (error) => {
+                    this.setState({
+                        isLoaded: true,
+                        error
+                    });
+                }
+            )
 
     }
 
-    getHomeRecipe = () => {
+    getRecipe = () => {
         if (this.state.isLoading) {
             return (
                 <img src={spinner} className='spinner' alt='spinner'/>
             )
         } else {
-            let homeElem = this.state.data.map((el, key) => {
-                let elem        = el.recipe,
-                    calories    = Math.round(elem.calories),
+            let recipeElem = this.state.items.map((el, key) => {
+                let elem = el.recipe,
+                    calories = Math.round(elem.calories),
                     totalWeight = Math.round(elem.totalWeight);
                 return (
                     <div key={key} className="recipe__item">
@@ -70,7 +76,7 @@ class RecipeHomeElem extends Component {
 
             return (
                 <div className="recipe">
-                    {homeElem}
+                    {recipeElem}
                 </div>
 
             );
@@ -82,14 +88,11 @@ class RecipeHomeElem extends Component {
 
         return (
             <>
-                {this.getHomeRecipe()}
+                {this.getRecipe()}
             </>
         )
 
     }
-
-
 }
 
-export default RecipeHomeElem;
-
+export default RecipeList;

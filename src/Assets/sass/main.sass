@@ -126,114 +126,33 @@ img
 
 
 .content
-  height: 100vh
   padding-top: 400px
+  padding-bottom: 50px
   background-size: cover
   background-attachment: fixed
-  &.home_page
-    background-image: url('http://eleon.devbirds.com/Eleon/demo/img/header.jpg')
-  &.recipe_page
-    background-image: url('https://images.pexels.com/photos/2878739/pexels-photo-2878739.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
-  &.calc_page
+  &.calc-page
     background-image: url('https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')
-  &.nutrition_page
+  &.nutrition-page
     background-image: url('https://images.pexels.com/photos/2878745/pexels-photo-2878745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
-  .container
-    width: 1140px
-    margin: auto
-    color: #000000
-    background: #f8f7f7
-    padding-right: 15px
-    padding-left: 15px
-    position: relative
-    &::before
-      content: ''
-      position: absolute
-      top: -4px
-      left: 0
-      height: 1px
-      width: 100%
-      background: #ffffff8f
 
+.container
+  width: 1140px
+  margin: auto
+  color: #000000
+  background: #f8f7f7
+  padding-right: 15px
+  padding-left: 15px
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: -4px
+    left: 0
+    height: 1px
+    width: 100%
+    background: #ffffff8f
 
+footer
+  background: #2b3034
 
-.recipe_wrapper
-  display: flex
-  margin-bottom: 50px
-  .recipe_item
-    font-family: 'Pathway Gothic One', sans-serif
-    color: #ffffff
-    display: flex
-    flex-direction: column
-    flex: 1 1 25%
-    max-width: 25%
-    margin: 0px 15px
-    outline: 1px solid rgba(255,255,255,0.5)
-    outline-offset: -8px
-    position: relative
-    &:first-child
-      margin-left: 0
-    &:last-child
-      margin-right: 0
-    .img
-      overflow: hidden
-      height: 166px
-    .desc_info
-      font-size: 20px
-      background: #2b3034
-      padding: 8px 15px
-      ul
-        display: flex
-        justify-content: space-between
-        padding: 6px 5px
-        border-top: 1px dashed rgba(242,180,60,0.5)
-        border-bottom: 1px dashed rgba(242,180,60,0.5)
-      li
-        flex: 1 1 50%
-        &:first-child
-          border-right: 1px solid rgba(255,255,255,0.2)
-        &:last-child
-          text-align: right
-      span
-        font-size: 18px
-        opacity: 0.5
-        padding-left: 5px
-    .desc_area
-      height: 145px
-      background: #2b3034
-      padding: 0 15px
-      overflow: hidden
-      a
-        color: #f2b43c
-        font-size: 22px
-        line-height: 1.2
-        padding: 0 5px 5px 5px
-      ul
-        padding: 0 5px
-    .person
-      position: absolute
-      top: 20px
-      left: -10px
-      background: #f1af2e
-      width: 70px
-      padding: 4px
-      font-size: 18px
-      text-align: center
-      box-shadow: 0px 0px 7px 2px #0000002e
-      &::before
-        content: ''
-        position: absolute
-        bottom: -10px
-        left: 0
-        border: 5px solid transparent
-        border-top: 5px solid #705115
-        border-left: 5px solid #705115
-        transform: scale(-1, 1)
-      &::after
-        content: ''
-        position: absolute
-        top: 0
-        right: -30px
-        border: 17px solid transparent
-        border-left: 13px solid #f1af2e
-
+//@import 'homePage'
