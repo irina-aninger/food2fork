@@ -5,15 +5,17 @@ import {
 } from "react-router-dom";
 
 // components
-import Header from './components/headerComponent/header';
-import HomePage from './components/pages/home/homePage';
-import RecipePage from './components/pages/recipe/recipePage';
-import CalorieCalculator from './components/pages/calorieCalculator';
-import NutritionAnalysis from './components/pages/nutritionAnalysis';
-import Footer from "./components/footerComponent/footer";
+import Header from './Components/Header/Header';
+import HomePage from './Components/Home/HomePage';
+import SearchPage from './Components/Search/SearchPage';
+import RecipePage from './Components/Recipe/RecipePage';
+import CalorieCalculator from './Components/Calorie/Calculator';
+import NutritionAnalysis from './Components/Analysis/Analysis';
+import Footer from "./Components/Footer/Footer";
+
 
 // includes
-import './Assets/css/main.min.css'
+import './Assets/css/Main.min.css'
 
 
 
@@ -25,6 +27,7 @@ function App() {
                 <Header/>
 
                 <Route exact path={'/'} component={HomePage}/>
+                <Route path={'/search'} component={SearchPage}/>
                 <Route path={'/recipe'} component={RecipePage}/>
                 <Route path={'/calorie-calculator'} component={CalorieCalculator}/>
                 <Route path={'/nutrition-analysis'} component={NutritionAnalysis}/>

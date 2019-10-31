@@ -1,44 +1,65 @@
 import React, {Component} from 'react';
-import spinner from '../../../Assets/spinner.svg';
-
+import spinner from "../../Assets/spinner.svg";
+import {Link} from "react-router-dom";
 
 
 const API_ID  = '2b39d5c7',
       API_KEY = '3a79db436b6e57c7aa617d135085b8f6';
 
 
-class RecipeHomeElem extends Component {
+class SearchList extends Component {
 
-    state = {
-        isLoading: true,
-        data: [],
-        image: undefined
-    };
+    _isMounted = false;
 
-    componentDidMount() {
-        return fetch(`https://api.edamam.com/search?q=${this.props.nameRecipe}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=4`)
-            .then((response) => response.json())
-            .then((responseJson) => {
-
-                this.setState({
-                    isLoading: false,
-                    data: responseJson.hits
-                })
-
-            })
-            .catch((error) => {
-                console.log(error);
-            })
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoading: true,
+            error: null,
+            items: [],
+        };
     }
 
-    getHomeRecipe = () => {
-        if (this.state.isLoading) {
+    componentDidUpdate(prevProps) {
+        if (this.props.value !== prevProps.value) {
+            this._isMounted = true;
+            fetch(`https://api.edamam.com/search?q=${this.props.value}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=${this.props.count}`)
+                .then((res) => res.json())
+                .then(
+                    (result) => {
+                        if (this._isMounted) {
+                            this.setState({
+                                isLoading: false,
+                                items: result.hits
+                            });
+                        }
+                    },
+                    (error) => {
+                        this.setState({
+                            isLoaded: true,
+                            error
+                        });
+                    }
+                )
+        }
+    }
+
+    componentWillUnmount() {
+        this._isMounted = false;
+    }
+
+    getRecipe = () => {
+        const {error, isLoading, items} = this.state;
+        if (isLoading) {
             return (
                 <img src={spinner} className='spinner' alt='spinner'/>
             )
+        } else if (error) {
+            return (
+                <>Ooops!</>
+            )
         } else {
-            let homeElem = this.state.data.map((el, key) => {
+            let recipeElem = items.map((el, key) => {
                 let elem        = el.recipe,
                     calories    = Math.round(elem.calories),
                     totalWeight = Math.round(elem.totalWeight);
@@ -54,7 +75,7 @@ class RecipeHomeElem extends Component {
                             </ul>
                         </div>
                         <div className="recipe__descr">
-                            <a href="/">{elem.label}</a>
+                            <Link to={{pathname:'/recipe', state:{elem: elem}}}>{elem.label}</Link>
                             <ul>
                                 {elem.ingredientLines.map((el, key) => {
                                     return (
@@ -70,7 +91,7 @@ class RecipeHomeElem extends Component {
 
             return (
                 <div className="recipe">
-                    {homeElem}
+                    {recipeElem}
                 </div>
 
             );
@@ -82,14 +103,11 @@ class RecipeHomeElem extends Component {
 
         return (
             <>
-                {this.getHomeRecipe()}
+                {this.getRecipe()}
             </>
         )
 
     }
-
-
 }
 
-export default RecipeHomeElem;
-
+export default SearchList;

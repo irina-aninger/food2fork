@@ -19,7 +19,7 @@ class Header extends Component{
                     <nav>
                         <ul>
                             <li>
-                                <Link to={'/recipe'}>Recipe</Link>
+                                <Link to={'/search'}>Recipe</Link>
                             </li>
                             <li>
                                 <Link to={'/calorie-calculator'}>Calorie calculator</Link>
