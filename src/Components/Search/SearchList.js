@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import spinner from "../../Assets/spinner.svg";
 import {Link} from "react-router-dom";
+import RecipeImg from "../Recipe/RecipeImg";
+import RecipeEnergy from "../Recipe/RecipeEnergy";
 
 
 const API_ID  = '2b39d5c7',
@@ -59,23 +61,16 @@ class SearchList extends Component {
                 <>Ooops!</>
             )
         } else {
-            let recipeElem = items.map((el, key) => {
+            const recipeElem = items.map((el, key) => {
                 let elem        = el.recipe,
                     calories    = Math.round(elem.calories),
                     totalWeight = Math.round(elem.totalWeight);
                 return (
                     <div key={key} className="recipe__item">
-                        <div className="recipe__img">
-                            <img src={elem.image} alt={elem.label}/>
-                        </div>
-                        <div className="recipe__energy">
-                            <ul>
-                                <li>{calories} <span>kcal</span></li>
-                                <li>{totalWeight} <span>g</span></li>
-                            </ul>
-                        </div>
+                        <RecipeImg src={elem.image} alt={elem.label} person={elem.yield}/>
+                        <RecipeEnergy calories={calories} weight={totalWeight}/>
                         <div className="recipe__descr">
-                            <Link to={{pathname:'/recipe', state:{elem: elem}}}>{elem.label}</Link>
+                            <Link to={{pathname:'/recipe', state:{elem: [{elem}]}}}>{elem.label}</Link>
                             <ul>
                                 {elem.ingredientLines.map((el, key) => {
                                     return (
@@ -84,13 +79,12 @@ class SearchList extends Component {
                                 })}
                             </ul>
                         </div>
-                        <span className="person">{elem.yield}</span>
                     </div>
                 )
             });
 
             return (
-                <div className="recipe">
+                <div className="recipes">
                     {recipeElem}
                 </div>
 

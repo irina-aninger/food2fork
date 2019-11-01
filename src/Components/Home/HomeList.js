@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 
 // includes
 import '../../Assets/css/RecipeList.min.css'
+import RecipeImg from "../Recipe/RecipeImg";
 
 
 const API_ID  = '2b39d5c7',
@@ -67,27 +68,16 @@ class HomeList extends Component {
                     calories    = Math.round(elem.calories),
                     totalWeight = Math.round(elem.totalWeight);
                 return (
-                    <div key={key} className="recipes__item">
-                        <div className="recipes__img">
-                            <img src={elem.image} alt={elem.label}/>
-                        </div>
-                        <div className="recipes__energy">
+                    <div key={key} className="recipe__item">
+                        <RecipeImg src={elem.image} alt={elem.label} person={elem.yield}/>
+                        <div className="recipe__energy">
                             <ul>
                                 <li>{calories} <span>kcal</span></li>
                                 <li>{totalWeight} <span>g</span></li>
                             </ul>
                         </div>
-                        <div className="recipes__descr">
-                            <Link to={{pathname:'/recipe', state: {
-                                    image: elem.image,
-                                    person: elem.yield,
-                                    label: elem.label,
-                                    calories: calories,
-                                    totalWeight: totalWeight,
-                                    dietLabels: elem.dietLabels,
-                                    healthLabels: elem.healthLabels,
-                                }
-                            }}>{elem.label}</Link>
+                        <div className="recipe__descr">
+                            <Link to={{pathname:'/recipe', state:{elem: [{elem}]}}}>{elem.label}</Link>
                             <ul>
                                 {elem.ingredientLines.map((el, key) => {
                                     return (
@@ -96,7 +86,6 @@ class HomeList extends Component {
                                 })}
                             </ul>
                         </div>
-                        <span className="person">{elem.yield}</span>
                     </div>
                 )
             });

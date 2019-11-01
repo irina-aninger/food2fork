@@ -10,7 +10,7 @@ import HomePage from './Components/Home/HomePage';
 import SearchPage from './Components/Search/SearchPage';
 import RecipePage from './Components/Recipe/RecipePage';
 import CalorieCalculator from './Components/Calorie/Calculator';
-import NutritionAnalysis from './Components/Analysis/Analysis';
+import AnalysisPage from './Components/Analysis/AnalysisPage';
 import Footer from "./Components/Footer/Footer";
 
 
@@ -30,7 +30,7 @@ function App() {
                 <Route path={'/search'} component={SearchPage}/>
                 <Route path={'/recipe'} component={RecipePage}/>
                 <Route path={'/calorie-calculator'} component={CalorieCalculator}/>
-                <Route path={'/nutrition-analysis'} component={NutritionAnalysis}/>
+                <Route path={'/nutrition-analysis'} component={AnalysisPage}/>
 
                 <Footer/>
 

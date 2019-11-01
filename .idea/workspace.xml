@@ -4,25 +4,17 @@
     <list default="true" id="3323102a-0a5a-4666-9461-6dd695222662" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/css/homePage.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/css/main.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/css/recipePage - Copy.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/css/recipePage.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/css/searchPage.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/sass/homePage.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/css/Recipe.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/css/Recipe.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/css/RecipeList.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/css/RecipeList.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/sass/Recipe.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/sass/Recipe.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/sass/RecipeList.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/sass/RecipeList.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assets/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/sass/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/sass/recipePage.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footerComponent/footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/headerComponent/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/calorieCalculator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/homeElem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/homePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/nutritionAnalysis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/recipe/recipePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/recipe/recipeSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/recipe/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/recipeList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Analysis/Analysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Analysis/Analysis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Home/HomeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/HomeList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Recipe/RecipePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Recipe/RecipePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Search/SearchList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/SearchList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Search/SearchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/SearchPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,79 +26,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/Search/SearchList.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/Recipe/RecipePage.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="237">
-                  <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Components/Home/HomeList.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="740">
-                  <caret line="87" column="68" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="68" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Assets/sass/RecipeList.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="85" column="15" lean-forward="true" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Components/Home/HomeList.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="87" column="48" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Assets/sass/Analysis.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="1" column="112" lean-forward="true" selection-start-line="1" selection-start-column="112" selection-end-line="1" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/Analysis/AnalysisTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,6 +76,7 @@
       <find>recipe__descr</find>
       <find>image</find>
       <find>recipeElem</find>
+      <find>recipe__img</find>
     </findStrings>
     <replaceStrings>
       <replace>hits</replace>
@@ -169,24 +112,33 @@
         <option value="$PROJECT_DIR$/src/components/pages/recipeList.js" />
         <option value="$PROJECT_DIR$/src/components/pages/recipe/recipeSearch.js" />
         <option value="$PROJECT_DIR$/src/Components/Home/HomeElem.js" />
-        <option value="$PROJECT_DIR$/src/Components/Search/Search.js" />
-        <option value="$PROJECT_DIR$/src/Assets/sass/Main.sass" />
         <option value="$PROJECT_DIR$/src/Components/Home/HomePage.js" />
         <option value="$PROJECT_DIR$/src/Components/Header/Header.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Assets/sass/Search.sass" />
         <option value="$PROJECT_DIR$/src/Components/Search/SearchPage.js" />
-        <option value="$PROJECT_DIR$/src/Assets/sass/Recipe.sass" />
-        <option value="$PROJECT_DIR$/src/Assets/sass/RecipeList.sass" />
+        <option value="$PROJECT_DIR$/src/Components/Recipe/RecipeImg.js" />
+        <option value="$PROJECT_DIR$/src/Components/Recipe/RecipeEnergy.js" />
         <option value="$PROJECT_DIR$/src/Components/Search/SearchList.js" />
+        <option value="$PROJECT_DIR$/src/Assets/sass/_Recipe.sass" />
+        <option value="$PROJECT_DIR$/src/Assets/sass/RecipeList.sass" />
         <option value="$PROJECT_DIR$/src/Components/Home/HomeList.js" />
+        <option value="$PROJECT_DIR$/src/Components/Recipe/RecipeLabels.js" />
         <option value="$PROJECT_DIR$/src/Components/Recipe/RecipePage.js" />
+        <option value="$PROJECT_DIR$/src/Assets/sass/Recipe.sass" />
+        <option value="$PROJECT_DIR$/src/Components/Search/SearchInput.js" />
+        <option value="$PROJECT_DIR$/src/Components/Search/Search.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Components/Analysis/Analysis.js" />
+        <option value="$PROJECT_DIR$/src/Assets/sass/Main.sass" />
+        <option value="$PROJECT_DIR$/src/Assets/sass/Analysis.sass" />
+        <option value="$PROJECT_DIR$/src/Components/Analysis/AnalysisPage.js" />
+        <option value="$PROJECT_DIR$/src/Components/Analysis/AnalysisTable.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1410" />
-    <option name="width" value="1157" />
+    <option name="x" value="1588" />
+    <option name="width" value="979" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -231,6 +183,13 @@
               <item name="food2fork" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="food2fork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="food2fork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Analysis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="food2fork" type="b2602c69:ProjectViewProjectNode" />
@@ -316,17 +275,18 @@
       <workItem from="1571851887470" duration="10585000" />
       <workItem from="1572201734212" duration="3158000" />
       <workItem from="1572453212297" duration="10049000" />
-      <workItem from="1572511433784" duration="9383000" />
+      <workItem from="1572511433784" duration="27345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98377000" />
+    <option name="totallyTimeSpent" value="116339000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1410" y="0" width="1157" height="1057" extended-state="0" />
+    <frame x="1588" y="0" width="979" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23029682" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19569471" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -341,16 +301,17 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2034632" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.15800866" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24821973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1998002" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Gulp" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -359,9 +320,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.15800866" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -528,23 +489,6 @@
     <entry file="file://$PROJECT_DIR$/src/Components/Footer/Footer.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assets/sass/Main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Search/Search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Header/Header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -555,10 +499,155 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Assets/sass/Search.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/sass/_Recipe.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="147" lean-forward="true" selection-start-line="2" selection-start-column="147" selection-end-line="2" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Recipe/RecipeImg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Home/HomePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Recipe/RecipeEnergy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" lean-forward="true" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Recipe/RecipeLabels.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Home/HomeList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="88" column="26" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#141#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/sass/Recipe.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Search/SearchInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="18" column="153" selection-start-line="18" selection-start-column="141" selection-end-line="18" selection-end-column="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/sass/RecipeList.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Recipe/RecipePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#117#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Search/Search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Analysis/Analysis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Search/SearchList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="44" column="17" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="44" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Analysis/AnalysisPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/sass/Main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -568,69 +657,25 @@
           <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="40" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#87#127#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/Assets/sass/Analysis.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#117#165#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="40">
+          <caret line="1" column="112" lean-forward="true" selection-start-line="1" selection-start-column="112" selection-end-line="1" selection-end-column="112" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Home/HomePage.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/Analysis/AnalysisTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="520">
+          <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assets/sass/Recipe.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assets/sass/RecipeList.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="85" column="15" lean-forward="true" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Search/SearchList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Home/HomeList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="87" column="68" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Recipe/RecipePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>

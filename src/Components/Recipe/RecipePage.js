@@ -1,32 +1,31 @@
 import React, {Component} from 'react';
+import RecipeImg from "../Recipe/RecipeImg";
+import RecipeEnergy from "./RecipeEnergy";
+import RecipeLabels from "./RecipeLabels";
 
 
 // includes
 import '../../Assets/css/Recipe.min.css'
 
-
 class RecipePage extends Component {
 
     getTitle() {
-        const  { image, person, label, calories, totalWeight, dietLabels, healthLabels } = this.props.location.state;
+        const {elem} = this.props.location.state;
+        const el = elem[0].elem;
+        console.log(el);
         return(
             <div className={'recipe'}>
-                <div>{person}</div>
-                <div>{label}</div>
-                <div>{calories}</div>
-                <div>{totalWeight}</div>
-                <div>{dietLabels}</div>
-                <div>{healthLabels}</div>
 
-                <div className={'flex'}>
-                    <div className={'recipe__img'}>
-                        <img src={image}  alt={label}/>
-                    </div>
+                 <div className={'flex bg_dark'}>
+                    <RecipeImg src={el.image} alt={el.label} person={el.yield}/>
                     <div className={'recipe__info'}>
-
+                        <div className={'recipe__title'}>{el.label}</div>
+                        <RecipeEnergy calories={Math.round(el.calories)} weight={Math.round(el.totalWeight)}/>
+                        <RecipeLabels title={'Diet'} labels={el.dietLabels}/>
+                        <RecipeLabels title={'Health'} labels={el.healthLabels}/>
                     </div>
                 </div>
-                <div className={'recipe__descr'}></div>
+                <div className={'recipe__descr bg_dark'}></div>
             </div>
         )
     }

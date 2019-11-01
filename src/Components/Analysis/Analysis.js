@@ -1,18 +1,30 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import cooking from "../../Assets/cooking.svg";
+import AnalysisTable from "./AnalysisTable";
 
 
+class Analysis extends Component {
 
-class NutritionAnalysis extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {value: ''};
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({value: event.target.value});
+    }
+
     render() {
         return (
-            <div className={"content nutrition-page"}>
-                <div className={'container'}>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            <>
+                <input type={'text'} className={"search-input"} placeholder={"Coffee and croissant"} value={this.state.value} onChange={this.handleChange}/>
+                <div className={"search"}>
+                    {this.state.value !== '' ? <AnalysisTable value={this.state.value} count={50}/> : <img src={cooking} className={'cooking'} alt='cooking'/>}
                 </div>
-            </div>
+            </>
         )
     }
 }
 
-export default NutritionAnalysis;
+export default Analysis;

@@ -4,6 +4,7 @@ import Search from "./Search";
 
 // includes
 import '../../Assets/css/Search.min.css'
+import '../../Assets/css/RecipeList.min.css'
 
 
 class SearchPage extends Component {
