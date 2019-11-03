@@ -11,6 +11,7 @@ class AnalysisPage extends Component {
         return (
             <div className={"content analysis-page"}>
                 <div className={'container'}>
+                    <h1>Nutrition Analisis</h1>
                     <Analysis/>
                 </div>
             </div>
