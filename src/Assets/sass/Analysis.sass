@@ -5,6 +5,8 @@
 .analysis-search
   width: 50%
   margin-right: 20px
+  p
+    margin-top: 0
 
 .input-box
   display: flex
@@ -60,3 +62,57 @@
 .analysis-table
   width: 50%
   margin-left: 20px
+  border-left: 2px solid #F2B43C
+  .table-title
+    display: flex
+    flex-direction: column
+    font-size: 36px
+    line-height: 1.2
+    color: #F2B43C
+    padding: 0 15px 15px
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    span
+      font-size: 18px
+      color: rgba(60, 61, 65, 0.7)
+      text-shadow: none
+  .table-body
+    position: relative
+    border-top: 2px solid #F2B43C
+  .table-body__title
+    position: absolute
+    top: -20px
+    right: 15px
+    font-size: 12px
+    color: rgba(60, 61, 65, 0.7)
+  .analysis-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-size: 18px
+    color: #FFFFFF
+    padding: 5px 15px
+    background: #2B3034
+    .item__nutrients
+      font-size: 22px
+      color: #F2B43C
+      text-align: center
+      span
+        font-size: 16px
+        color: #FFFFFF
+    .item__daily
+      font-size: 22px
+      width: 40px
+      text-align: center
+      span
+        font-size: 16px
+  .analysis-item__sub-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-size: 16px
+    color: #2B3034
+    padding: 5px 15px 5px 25px
+    background: #FFFFFF
+    .sub-item__daily
+      width: 40px
+      text-align: center

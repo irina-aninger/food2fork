@@ -16,7 +16,7 @@ class HomePage extends Component {
 
     render() {
 
-        let homeBoxes = this.state.data.map((el, key) => {
+        const homeBoxes = this.state.data.map((el, key) => {
             return (
                 <div key={key}>
                     <h1>{el.name} recipes</h1>
